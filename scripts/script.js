@@ -36,5 +36,9 @@ function generateMousePoint(){
     generateAndDrawQuadtree(quadPoints);
 }
 
-quadPoints = quadPoints.concat(createPoints(POINTS_QUANTITY));
-generateAndDrawQuadtree(quadPoints);
+function restart(){
+    quadPoints = quadPoints.concat(createPoints(POINTS_QUANTITY));
+    generateAndDrawQuadtree(quadPoints);
+}
+
+restart();
